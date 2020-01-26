@@ -1,0 +1,27 @@
+.test {
+  color: white;
+  border: 1px solid rebeccapurple;
+  width: 40%;
+  margin: 4% 2%;
+  padding: 0% 2%;
+  background-color: rebeccapurple;
+  border-radius: 5px;
+}
+
+.award-button,
+.revoke-button {
+  font-size: 1.2em;
+  padding: 1% 3%;
+  margin: 5%;
+  border-radius: 3px;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.4em;
+}
+
+.score,
+.player-name {
+  font-size: 2em;
+}
