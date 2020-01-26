@@ -12,6 +12,7 @@ const PlayerContainer = () => {
 
   const playersForCards = players.map(player => {
       return <PlayerCard
+      key={player.name}
       name={player.name}
       tagline={player.tagline}
     />

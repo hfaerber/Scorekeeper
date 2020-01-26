@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.name-input,
+.tagline-input {
+  min-width: 50%;
+  border-radius: 3px;
+  margin: 1%;
+  font-size: 1.2em;
+  padding: 1%;
+}
+
+.submit-button {
+  min-width: 20%;
+  border-radius: 3px;
+  margin: 1%;
+  font-size: 1.2em;
+  padding: 1%;
+}
