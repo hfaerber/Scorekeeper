@@ -3,6 +3,7 @@ import './PlayerCard.css';
 
 const PlayerCard = ({ name, tagline }) => {
   const [score, setScore] = useState(0);
+  const [isWinning, setIsWinning] = useState(false);
 
   const award = () => {
     setScore(prevScore => prevScore +1)

@@ -10,7 +10,8 @@ function App() {
       tagline: 'Read the Bible!'},
     { name: 'Brittany',
       tagline: 'Ah-range'}
-  ])
+  ]);
+
 
   return (
     <div className="App">
