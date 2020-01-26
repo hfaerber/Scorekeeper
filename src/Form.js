@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
 import './Form.css';
 
-const Form = () => {
+const Form = ({players, setPlayers}) => {
   const [playerName, setPlayerName] = useState('');
   const [tagline, setTagline] = useState('');
+
+  const submitNewPlayer = (event) => {
+    event.preventDefault();
+    let newPlayer = {
+      name: playerName,
+      tagline: tagline
+    };
+    setPlayers(prevPlayers => [...prevPlayers, newPlayer])
+  }
 
   return(
     <form className='form'>
@@ -13,7 +22,8 @@ const Form = () => {
       <input type='text' value={tagline} name='tagline'
         placeholder="Enter player tagline...." className='tagline-input'
         onChange={ event => setTagline(event.target.value)} />
-      <button type='button' className='submit-button' >Submit</button>
+      <button type='button' className='submit-button'
+        onClick={event => submitNewPlayer(event)}>Submit</button>
     </form>
   )
 }
